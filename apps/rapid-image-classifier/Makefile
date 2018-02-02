@@ -37,11 +37,15 @@ run: all
 	@echo "\nRunning rapid-image-classifier.py";
 	python3 rapid-image-classifier.py
 
+.PHONY: clean
+clean:
+	@echo "\nmaking clean";
+	@echo "  Nothing to clean";
+
 .PHONY: help
 help:
 	@echo "possible make targets: ";
 	@echo "  make help - Shows this message";
 	@echo "  make - Builds all dependencies, but does not run this program";
-	@echo "  make all - Builds all dependencies and runs this program";
 	@echo "  make run - Runs this program";
 
